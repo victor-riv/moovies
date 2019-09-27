@@ -1,0 +1,27 @@
+.login-page {
+  height: 100vh;
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: white;
+  width: 60%;
+  height: 70%;
+  display: flex;
+}
+
+.login-left {
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+}
+
+.login-right {
+  background-color: yellow;
+  width: 50%;
+  height: 100%;
+}
