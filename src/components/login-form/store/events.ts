@@ -1,9 +1,7 @@
-import { Subscription } from '../../../../services/subscription-service';
-import { EventType } from '../types';
+import { FormSubmitted, LoginEventType } from '../types';
+import { LoginForm } from '../models';
 
-export interface SubscriptionEvent {
-  type: EventType;
-  subscription?: Subscription;
-  subscriptions?: Subscription[];
-  error?: Error;
-}
+export const formSubmitted = (payload: LoginForm): FormSubmitted => ({
+  type: LoginEventType.FormSubmitted,
+  payload
+});
